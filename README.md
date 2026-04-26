@@ -69,10 +69,15 @@ POST /students
 Request Body:
 
 {
+
   "name": "John Doe",
+  
   "age": 20,
+  
   "course": "Computer Science"
+  
 }
+
 ➤ Update student
 PUT /students/:id
 
@@ -86,6 +91,7 @@ You can test APIs using:
 Postman
 
 Thunder Client (VS Code extension)
+
 🚫 .gitignore Example
 
 Make sure you ignore:
@@ -95,6 +101,7 @@ node_modules/
 .env
 
 👩‍💻 Author
+
 Nandhini M
 
 GitHub: Nandhini221106
