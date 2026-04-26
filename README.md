@@ -6,15 +6,23 @@ This project allows you to perform basic CRUD operations like creating, reading,
 🚀 Features
 
 ➕ Add new students
+
 📄 Get all students
+
 🔍 Get student by ID
+
 ✏️ Update student details
+
 ❌ Delete student
+
 ⚡ Built with Express.js (fast and lightweight server)
+
 🛠️ Tech Stack
 
 Backend: Node.js, Express.js
+
 Database: (Add here if you are using MongoDB / MySQL / JSON file)
+
 Tools: npm, Postman
 
 📁 Project Structure
