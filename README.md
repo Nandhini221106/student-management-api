@@ -43,7 +43,7 @@ student-management-api/
 ⚙️ Installation & Setup
 
 1. Clone the repository
-git clone https://github.com/Nandhinimohan221106/student-management-api.git
+git clone https://github.com/Nandhini221106/student-management-api
 2. Move into project folder
 cd student-management-api
 3. Install dependencies
