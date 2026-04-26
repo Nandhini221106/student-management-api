@@ -28,6 +28,7 @@ Tools: npm, Postman
 📁 Project Structure
 
 student-management-api/
+
 │── server.js
 
 │── package.json
