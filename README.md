@@ -54,11 +54,15 @@ node server.js
 Server will start at:
 
 http://localhost:3000
+
 📌 API Endpoints
+
 ➤ Get all students
 GET /students
+
 ➤ Get student by ID
 GET /students/:id
+
 ➤ Add new student
 POST /students
 
@@ -71,20 +75,26 @@ Request Body:
 }
 ➤ Update student
 PUT /students/:id
+
 ➤ Delete student
 DELETE /students/:id
+
 🧪 Testing
 
 You can test APIs using:
 
 Postman
+
 Thunder Client (VS Code extension)
 🚫 .gitignore Example
 
 Make sure you ignore:
 
 node_modules/
+
 .env
+
 👩‍💻 Author
 Nandhini M
+
 GitHub: Nandhini221106
