@@ -1,0 +1,19 @@
+app.post("/students", (req, res) => {
+  const { name, age, course } = req.body;
+
+  db.query(
+    "INSERT INTO students (name, age, course) VALUES (?, ?, ?)",
+    [name, age, course],
+    (err, result) => {
+      if (err) {
+        res.send(err);
+      } else {
+        res.send("Student Added Successfully");
+      }
+    }
+  );
+});
+
+app.listen(5000, () => {
+  console.log("Server running on port 5000");
+});

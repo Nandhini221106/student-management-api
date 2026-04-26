@@ -30,36 +30,30 @@ app.post("/students", (req, res) => {
     "INSERT INTO students (name, age, course) VALUES (?, ?, ?)",
     [name, age, course],
     (err, result) => {
-      if (err) {
-        res.send(err);
-      } else {
-        res.send("Student Added Successfully");
-      }
+      if (err) return res.send(err);
+      res.send("Student Added Successfully");
     }
   );
 });
+
 app.get("/students", (req, res) => {
   db.query("SELECT * FROM students", (err, result) => {
-    if (err) {
-      res.send(err);
-    } else {
-      res.json(result);
-    }
+    if (err) return res.send(err);
+    res.json(result);
   });
 });
+
 app.get("/students/:id", (req, res) => {
   db.query(
     "SELECT * FROM students WHERE id = ?",
     [req.params.id],
     (err, result) => {
-      if (err) {
-        res.send(err);
-      } else {
-        res.json(result);
-      }
+      if (err) return res.send(err);
+      res.json(result);
     }
   );
 });
+
 app.put("/students/:id", (req, res) => {
   const { name, age, course } = req.body;
 
@@ -67,28 +61,25 @@ app.put("/students/:id", (req, res) => {
     "UPDATE students SET name=?, age=?, course=? WHERE id=?",
     [name, age, course, req.params.id],
     (err, result) => {
-      if (err) {
-        res.send(err);
-      } else {
-        res.send("Student Updated Successfully");
-      }
+      if (err) return res.send(err);
+      res.send("Student Updated Successfully");
     }
   );
 });
+
 app.delete("/students/:id", (req, res) => {
   db.query(
     "DELETE FROM students WHERE id=?",
     [req.params.id],
     (err, result) => {
-      if (err) {
-        res.send(err);
-      } else {
-        res.send("Student Deleted Successfully");
-      }
+      if (err) return res.send(err);
+      res.send("Student Deleted Successfully");
     }
   );
 });
 
-app.listen(5000, () => {
-  console.log("Server running on port 5000");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log("Server running on port " + PORT);
 });
