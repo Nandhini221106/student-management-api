@@ -29,11 +29,15 @@ Tools: npm, Postman
 
 student-management-api/
 │── server.js
+
 │── package.json
+
 │── package-lock.json
+
 │── .gitignore
+
 │── .gitattributes
-│
+
 └── (add your routes/controllers if any)
 
 ⚙️ Installation & Setup
