@@ -4,6 +4,7 @@ A simple RESTful API for managing student records built using Node.js and Expres
 This project allows you to perform basic CRUD operations like creating, reading, updating, and deleting student data.
 
 🚀 Features
+
 ➕ Add new students
 📄 Get all students
 🔍 Get student by ID
@@ -11,9 +12,11 @@ This project allows you to perform basic CRUD operations like creating, reading,
 ❌ Delete student
 ⚡ Built with Express.js (fast and lightweight server)
 🛠️ Tech Stack
+
 Backend: Node.js, Express.js
 Database: (Add here if you are using MongoDB / MySQL / JSON file)
 Tools: npm, Postman
+
 📁 Project Structure
 
 student-management-api/
@@ -26,8 +29,9 @@ student-management-api/
 └── (add your routes/controllers if any)
 
 ⚙️ Installation & Setup
+
 1. Clone the repository
-git clone https://github.com/your-username/student-management-api.git
+git clone https://github.com/Nandhinimohan221106/student-management-api.git
 2. Move into project folder
 cd student-management-api
 3. Install dependencies
